@@ -1,0 +1,673 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+    font-family: palanquin;
+}
+
+
+/**LANDING PAGE**/
+
+.landing {
+    z-index: -5;
+    margin: auto;
+    margin-top: -16px;
+	position: relative;
+	display: table;
+	width: 100%;
+	height: 752px;
+    font-family: palanquin;
+    -webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+}
+
+.parallax {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -10;
+    width: 100%;
+	height: 752px;
+    background: url(../assets/images/landing.jpg);
+    background-repeat: no-repeat;
+    background-size: 1600px 1000px;
+    background-position: center;
+    font-family: palanquin;
+    -webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+    
+}
+
+
+.hidden {
+    display: table-cell;
+    vertical-align: middle;
+    height: 752px;
+    width: 100%;
+    /**background: rgba(75, 117, 32, 0.8);**/
+    background: rgba(0,0,0,0.7);
+}
+
+
+.logo-button {
+    margin-top: -250px;
+    margin-right: 20px;
+    float: right;
+    z-index: 5;
+	width: 120px;
+	height: 40px;
+    border-radius: 5px;
+    color: white; 
+    border: 3px solid white;
+    
+}
+
+.logo-button p {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+.logo-button1 {
+    margin-top: -250px;
+    margin-right: 165px;
+    float: right;
+    z-index: 5;
+	width: 120px;
+	height: 40px;
+    border-radius: 5px;
+    color: white;
+    border: 3px solid white;
+}
+
+.logo-button1 p {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+.logo-line {
+    position: relative;
+    display: block;
+    height: 200px;
+    width: 700px;
+    margin: 0 auto;
+    padding-left: 100px;
+    margin-top: 00px;
+}
+
+.logo-box {
+    margin: auto;
+    z-index: 5;
+	width: 200px;
+	height: 200px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.stock{
+    /*Scales stock images relative to size of the browsing window*/
+    max-width: 75%;
+    max-height: 75%;
+}
+
+
+
+
+/*****NAVBAR***/
+
+/**misc**/
+
+.nav-button{
+    background-color: rgba(75, 117, 32, 1);
+    border-radius: 2px;
+    color: white;
+    padding: 2px 14px;
+}
+
+.nav-current-tab{
+    color: rgba(75, 117, 32, 1);
+    border-bottom: thin solid rgba(75, 117, 32, 1);
+}
+
+
+
+/**position-relative**/
+.nav {
+    z-index: 5;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    -moz-box-shadow:    0 2px 3px -1px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 2px 3px -1px rgba(0,0,0,0.1);
+    -ms-box-shadow:     0 2px 3px -1px rgba(0,0,0,0.1);
+    box-shadow:         0 2px 3px -1px rgba(0,0,0,0.1);
+    }
+
+.nav ul {
+    z-index: 5;
+    left: 0;
+    float: right;
+    padding-right: 40px;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.nav ul li {
+    display: inline-block;
+    padding-left: 5.5px;
+    padding-right: 5.5px;
+    padding-top: 35px;   
+}
+
+.nav ul li a {
+    text-decoration: none;
+    font-family: palanquin;
+    font-size: 12px;
+    padding: 9px;
+    color: #555555;
+}
+
+.nav img {
+    height: 110px;
+    width: 250px;
+    margin-left: 130px;
+    margin-top: -10px;
+    float: left;
+}
+
+.nav ul li a:hover {
+    color: rgba(75, 117, 32, 1);
+}
+
+/**Hamburger/Flyout Menu**/
+
+button #hamburger{
+    /*background-color: white;*/
+    display: none;
+    border: 2px solid black;
+    text-align: center;
+    float: right;
+    font-size: 12px;
+    box-shadow: 1px 1px 4px;
+}
+
+/*button #hamburger:active{
+    background-color: #808080;
+    color: white;
+    box-shadow: 2px 2px 7px;
+}*/
+
+.dropdownlist{
+    background-color: white;
+    box-shadow: 0.5px 0.5px 3px;
+    text-align: center;
+}
+
+.dropdownlist ul{
+    display: inline-block;
+}
+
+.dropdownlist li{
+    border: 1px solid black;
+}
+
+.dropdownlist li:hover{
+    background-color: #f1f1f1;
+    transition: 0.2s;
+    padding: 0 0 0 0;
+}
+
+/**position-fixed**/
+
+.nav_fixed {
+    z-index: 5;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+    -moz-box-shadow:    0 2px 3px -1px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 2px 3px -1px rgba(0,0,0,0.1);
+    -ms-box-shadow:     0 2px 3px -1px rgba(0,0,0,0.1);
+    box-shadow:         0 2px 3px -1px rgba(0,0,0,0.1);
+}
+
+.nav_fixed ul {
+    z-index: 5;
+    margin: 0;
+    float: right;
+    padding-right: 40px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav_fixed ul li {
+    z-index: 0;
+    display: inline-block;
+    padding-left: 5.5px;
+    padding-right: 5.5px;
+    padding-top: 35px;
+}
+
+.nav_fixed ul li a {
+    text-decoration: none;
+    font-family: palanquin;
+    font-size: 12px;
+    padding: 9px;
+    color: #555555;
+}
+
+.nav_fixed img {
+    height: 110px;
+    width: 250px;
+    margin-left: 130px;
+    margin-top: -10px;
+    float: left;
+}
+
+.nav_fixed ul li a:hover {
+
+    color: rgba(75, 117, 32, 1);
+
+}
+
+/******FOOTER*****/
+
+.footer {
+    position: relative;
+	width: 100%;
+	height: 200px;
+    background-color: #555555;
+}
+
+.footer-content {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.footer-address {
+    float: left;
+    color: white;
+    padding: 10px;
+    
+}
+
+.footer-address1 {
+    float: right;
+    color: white;
+    padding: 10px;
+    
+}
+
+.footer img {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    margin-left: 50%;
+    padding-top: 15%;
+}
+
+
+.fnav {
+    z-index: 5;
+    height: 50px;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    }
+
+.fnav ul {
+    z-index: 5;
+    left: 0;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.fnav ul li {
+    display: inline-block;
+    padding-left: 5.5px;
+    padding-right: 5.5px; 
+}
+
+.fnav ul li a {
+    text-decoration: none;
+    font-family: palanquin;
+    font-size: 12px;
+    color: #ffffffff;
+}
+
+
+.fnav ul li a:hover {
+    color: rgba(75, 117, 32, 1);
+}
+
+/**MAIN_CONTENT**/
+
+.bar1 {
+    z-index: 1;
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 850px;
+	background-color: white;
+    font-family: palanquin;
+}
+
+.bar2 {
+    z-index: 0;
+	position: relative;
+    display: block;
+	width: 100%;
+	height: 700px;
+    background: rgba(0,0,0,0.7);
+    top: 0;
+    -webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+}
+
+.bar3 {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 800px;
+    background-color: white;
+}
+
+.bar-parallax {
+    z-index: -5;
+    position: absolute;
+    left: 0;
+	width: 100%;
+	height: 1600px;
+    background: url(../assets/images/bar1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bar-parallax1 {
+    z-index: -5;
+    position: fixed;
+    left: 0;
+    margin-bottom: 0;
+	width: 100%;
+	height: 1600px;
+    background: url(../assets/images/bar1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.opacity {
+    z-index: 0;
+    position: absolute;
+    left: 0;
+	width: 100%;
+	height: 750px;
+    background: rgba(0,0,0,0.7);
+    
+}
+
+.bar1-content1 {
+    border-bottom: thin solid #555;
+    height: 45%;
+    width: 80%;
+    margin: 0 auto; 
+    padding-top: 100px;
+}
+
+.bar1-content1 img {
+    padding-left: 20px;
+    float: left;
+}
+
+.bar1-content1-text {
+    display: block;
+    position: relative;
+    padding: 2em;
+    line-height: 40px;
+    width: 40%;
+    float: right;
+    color: #555;
+}
+
+.bar1-content1-text h1 {
+    color: rgba(75, 117, 32, 1);
+    margin-top: -.9em;
+    padding-bottom: .5em;
+}
+
+.bar1-content2 {
+    position: relative;
+    height: 35%;
+    width: 80%;
+    margin: 0 auto; 
+    padding-top: 100px;
+}
+
+.bar1-content2-text h1 {
+    color: rgba(75, 117, 32, 1);
+    margin-top: -1em;
+    padding-bottom: .5em;
+}
+
+.bar1-content2-text {
+    text-align: center;
+    line-height: 40px;
+    width: 100%;
+    color: #555;
+}
+
+
+/*RESPONSIVENESS*/
+
+@media (max-width: 500px) {
+    
+    .landing {
+        z-index: -5;
+        margin: auto;
+        margin-top: -16px;
+        position: relative;
+        display: table;
+        width: 100%;
+        height: 402px;
+        font-family: palanquin;
+    }
+    
+    .parallax {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: -10;
+	    width: 100%;
+	    height: 402px;
+        background: url(../assets/images/commons.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        font-family: palanquin;
+    
+    }
+
+        
+    .hidden {
+        display: table-cell;
+        vertical-align: middle;
+        height: 402px;
+        width: 100%;
+        /**background: rgba(75, 117, 32, 0.8);**/
+        background: rgba(0,0,0,0.7);
+}
+    .logo-line {
+        position: relative;
+        display: block;
+        height: 100px;
+        width: 400px;
+        margin: 0 auto;
+        padding-left: 100px;
+        margin-top: 00px;
+}
+    .logo-button {
+        margin-top: -250px;
+        margin-right: 20px;
+        float: center;
+        z-index: 5;
+        border-radius: 5px;
+        color: white; 
+        border: 3px solid white;
+    
+}
+
+    .logo-button p {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 20px;
+}
+
+    .logo-button1 {
+        margin-top: -250px;
+        margin-right: 165px;
+        float: center;
+        z-index: 5;
+
+        border-radius: 5px;
+        color: white;
+        border: 3px solid white;
+}
+
+    .logo-button1 p {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 20px;
+}
+    .nav img {
+        height: 110px;
+        width: 250px;
+        margin-left: 40px;
+        margin-top: -10px;
+        float: left;
+}
+    
+}
+
+@media (max-width: 320px) {
+    
+    .landing {
+        z-index: -5;
+        margin: auto;
+        margin-top: -16px;
+        position: relative;
+        display: table;
+        width: 100%;
+        height: 202px;
+        background-image: url(../assets/images/commons.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        font-family: palanquin;
+    }
+        
+    .hidden {
+        display: table-cell;
+        vertical-align: middle;
+        height: 202px;
+        width: 100%;
+        /**background: rgba(75, 117, 32, 0.8);**/
+        background: rgba(0,0,0,0.7);
+}
+    .logo-line {
+        position: relative;
+        display: block;
+        height: 30px;
+        width: 100px;
+        margin: 0 auto;
+        padding-left: 100px;
+        margin-top: 00px;
+}
+    .logo-button {
+        margin-top: -250px;
+        margin-right: 20px;
+        float: center;
+        z-index: 5;
+        border-radius: 5px;
+        color: white; 
+        border: 3px solid white;
+    
+}
+
+    .logo-button p {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 20px;
+}
+
+    .logo-button1 {
+        margin-top: -250px;
+        margin-right: 165px;
+        float: center;
+        z-index: 5;
+
+        border-radius: 5px;
+        color: white;
+        border: 3px solid white;
+}
+
+        .logo-button1 p {
+            margin: 0 auto;
+            text-align: center;
+            font-size: 20px;
+}
+    
+        .nav img {
+            height: 110px;
+            width: 250px;
+            margin-left: 40px;
+            margin-top: -10px;
+            float: left;
+}
+
+        button #hamburger{
+            display: inline-block;
+            float: right;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        .bar1-content1-text {
+            display: block;
+            position: relative;
+            padding-left: 20px;
+            text-align: center;
+            line-height: 15px;
+            width: 100%;
+            color: #555;
+}
+    
+    
+        .bar1-content1-text h1 {
+            color: black/**rgba(75, 117, 32, 1)**/;
+            margin-top: -.9em;
+            padding-bottom: .5em;
+            text-align: center;
+            font-size: 15px;
+}
+}
+    
+
+
+
+    
+
+
+
